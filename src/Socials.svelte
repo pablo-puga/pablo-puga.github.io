@@ -4,8 +4,7 @@
     export let rrss = [];
 </script>
 
-<Section>
-    <h2 class="text-2xl md:text-3xl font-medium mb-3">You can find me at</h2>
+<Section title="You can find me at">
     <ul class="flex flex-row flex-wrap justify-center gap-5 text-xl">
         {#each rrss as network}
         <article class="social flex flex-row items-center transition-all duration-200 hover:text-2xl" style={`--hover-color: ${network.color}`}>
