@@ -1,6 +1,6 @@
 <script>
-    export let classes;
-    export let title;
+    export let classes = "";
+    export let title = "";
 
     const classList = classes 
         ? `flex flex-col items-center ${classes.toString()}` 
