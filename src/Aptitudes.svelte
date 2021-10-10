@@ -17,13 +17,12 @@
         let prevColor = undefined;
 
         return () => {
-            const colorList = prevColor
-                ? Object.assign({}, colors, { prevColor: undefined })
-                : colors;
-            const randomIndex = Math.floor(Math.random() * Object.keys(colors).length);
-            const selectedColor = Object.keys(colors)[randomIndex];
+            const colorList = Object.assign({}, colors);
+            if (prevColor) delete colorList[prevColor];
+            const randomIndex = Math.floor(Math.random() * Object.keys(colorList).length);
+            const selectedColor = Object.keys(colorList)[randomIndex];
             prevColor = selectedColor;
-            return colors[selectedColor];
+            return colorList[selectedColor];
         };
     })();
 
