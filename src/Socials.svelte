@@ -1,8 +1,10 @@
 <script>
+    import Section from './Section.svelte';
+
     export let rrss;
 </script>
 
-<section class="flex flex-col items-center">
+<Section>
     <h2 class="text-2xl md:text-3xl font-medium mb-3">You can find me at</h2>
     <ul class="flex flex-row flex-wrap justify-center gap-5 text-xl">
         {#each rrss as network}
@@ -22,7 +24,7 @@
         </article>
         {/each}
     </ul>
-</section>
+</Section>
 
 <style>
     .fa-icon {
