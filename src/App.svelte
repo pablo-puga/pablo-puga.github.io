@@ -1,6 +1,7 @@
 <script>
     import { faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
+    import Aptitudes from './Aptitudes.svelte';
     import Section from './Section.svelte';
     import Socials from './Socials.svelte';
 
@@ -27,21 +28,54 @@
             color: '#6e5494',
         },
     ];
+
+    const aptitudes = [
+        { text: 'PHP', weight: 1 },
+        { text: 'JavaScript', weight: 1 },
+        { text: 'NodeJS', weight: 1 },
+        { text: 'Linux', weight: 0.6 },
+        { text: 'Bash', weight: 0.6 },
+        { text: 'HTML', weight: 0.5 },
+        { text: 'SIP', weight: 1 },
+        { text: 'VoIP', weight: 0.7 },
+        { text: 'Asterisk', weight: 1 },
+        { text: 'VoiceXML', weight: 0.6 },
+        { text: 'C', weight: 0.6 },
+        { text: 'C++', weight: 0.8 },
+        { text: 'Git', weight: 0.2 },
+        { text: 'MySQL', weight: 0.6 },
+        { text: 'MongoDB', weight: 0.3 },
+        { text: 'EC2', weight: 0.4 },
+        { text: 'S3', weight: 0.2 },
+        { text: 'Symfony', weight: 0.4 },
+        { text: 'React', weight: 0.5 },
+        { text: 'VueJS', weight: 0.2 },
+    ];
+    
+    const shuffleArray = array => {
+        const copy = Array.from(array);
+        for (let i = copy.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            const temp = copy[i];
+            copy[i] = copy[j];
+            copy[j] = temp;
+        }
+        return copy;
+    }
 </script>
 
 <article class="font-sans text-gray-800 flex flex-col items-center gap-5">
-    <h1 class="text-4xl font-bold text-center mt-16 mb-5 tracking-wider">Pablo Puga Peralta</h1>
+    <h1 class="name text-4xl drop-shadow md:text-5xl font-bold text-center mt-16 mb-5 tracking-wider transition-all duration-75">Pablo Puga Peralta</h1>
 
-    <Section title="Who am I?" classes="text-center p-3 md:p-2 lg:p-0 md:w-3/4 transition-all duration-100">
+    <Section title="Who am I?" classes="text-center p-3 md:p-2 lg:p-0 md:w-2/4 transition-all duration-75">
         <p class="text-base md:text-xl">
-            I am a Telecom Engineer specialized on modern communication technologies. I like to develop things in JavaScript, PHP, C and C++ and I am a great fan of automatize all possible tasks. 
+            I am a Telecom Engineer specialized on modern communication technologies. I like to develop things in JavaScript, PHP, C and C++ and I am a great fan of automatizing all possible tasks. 
         </p>
     </Section>
 
     <!-- Trabajo actual -->
 
-    <!-- Aptitudes -->
-    <!-- https://www.npmjs.com/package/d3-cloud -->
+    <Aptitudes keywords={shuffleArray(aptitudes)}/>
 
     <Socials {rrss}/>
 </article>
@@ -50,4 +84,8 @@
     @tailwind base;
     @tailwind components;
     @tailwind utilities;
+
+    .name {
+        text-shadow: 0 1px 2px rgba(31, 41, 55, 0.20);
+    }
 </style>

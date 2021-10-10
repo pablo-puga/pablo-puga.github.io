@@ -3,8 +3,8 @@
     export let title = "";
 
     const classList = classes 
-        ? `flex flex-col items-center ${classes.toString()}` 
-        : 'flex flex-col items-center';
+        ? `mb-3 md:mb-5 flex flex-col items-center ${classes.toString()}` 
+        : 'mb-3 md:mb-5 flex flex-col items-center';
 </script>
 
 <section class={classList}>
