@@ -1,7 +1,7 @@
 <script>
     import Section from './Section.svelte';
 
-    export let rrss;
+    export let rrss = [];
 </script>
 
 <Section>
