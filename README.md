@@ -1,3 +1,3 @@
 # pablopugaperalta.com
 
-This is an ongoing project
+This is a personal presentation page build with [Svelte](https://svelte.dev/) and [TailwindCSS](https://tailwindcss.com/)
