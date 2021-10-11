@@ -2,6 +2,7 @@
     import { faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
     import Aptitudes from './Aptitudes.svelte';
+    import Job from './Job.svelte';
     import Section from './Section.svelte';
     import Socials from './Socials.svelte';
 
@@ -73,7 +74,7 @@
         </p>
     </Section>
 
-    <!-- Trabajo actual -->
+    <Job/>
 
     <Aptitudes keywords={shuffleArray(aptitudes)}/>
 
