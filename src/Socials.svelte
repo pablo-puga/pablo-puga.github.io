@@ -7,7 +7,7 @@
 <Section title="You can find me at">
     <ul class="flex flex-row flex-wrap justify-center gap-5 text-xl">
         {#each rrss as network}
-        <article class="social flex flex-row items-center transition-all duration-200 hover:text-2xl" style={`--hover-color: ${network.color}`}>
+        <li class="social flex flex-row items-center transition-all duration-200 hover:text-2xl" style={`--hover-color: ${network.color}`}>
             <svg
                 aria-hidden="true"
                 class="fa-icon"
@@ -20,7 +20,7 @@
             <h3 class="inline-block ml-1">
                 <a href={network.link} title={network.name}>{network.display}</a>
             </h3>
-        </article>
+        </li>
         {/each}
     </ul>
 </Section>
