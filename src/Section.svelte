@@ -3,8 +3,8 @@
     export let title = "";
 
     const classList = classes 
-        ? `mb-3 md:mb-5 flex flex-col items-center ${classes.toString()}` 
-        : 'mb-3 md:mb-5 flex flex-col items-center';
+        ? `page-section md:mb-5 ${classes.toString()}` 
+        : 'page-section md:mb-5';
 </script>
 
 <section class={classList}>
@@ -13,3 +13,9 @@
     {/if}
     <slot></slot>
 </section>
+
+<style lang="postcss">
+    .page-section {
+        @apply mb-3 flex flex-col items-center transition-all duration-100;
+    }
+</style>

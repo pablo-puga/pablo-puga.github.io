@@ -41,7 +41,7 @@
     }));
 </script>
 
-<Section title="Aptitudes" classes="p-3 md:p-2 lg:p-0 md:w-2/4 max-w-screen-sm transition-all duration-100">
+<Section title="Aptitudes" classes="p-3 md:p-2 lg:p-0 md:w-2/4 max-w-screen-sm">
     <ul class="flex flex-row flex-wrap gap-3 items-center content-center justify-center font-mono">
         {#each parsedKeywords as word}
         <li class={`px-2 shadow-sm rounded ${word.bgColor} ${word.fontWeight}`} style={`font-size: ${word.fontSize}px`}>{word.text}</li>
