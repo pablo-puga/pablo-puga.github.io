@@ -66,9 +66,9 @@
 </script>
 
 <article class="font-sans text-gray-800 flex flex-col items-center gap-5">
-    <h1 class="name text-4xl drop-shadow md:text-5xl font-bold text-center mt-16 mb-5 tracking-wider transition-all duration-75">Pablo Puga Peralta</h1>
+    <h1 class="name text-4xl drop-shadow md:text-5xl font-bold text-center mt-16 mb-5 tracking-wider transition-all duration-100">Pablo Puga Peralta</h1>
 
-    <Section title="Who am I?" classes="text-center p-3 md:p-2 lg:p-0 md:w-2/4 transition-all duration-75">
+    <Section title="Who am I?" classes="text-center p-3 md:p-2 lg:p-0 md:w-3/4 max-w-screen-md transition-all duration-100">
         <p class="text-base md:text-xl">
             I am a Telecom Engineer specialized on modern communication technologies. I like to develop things in JavaScript, PHP, C and C++ and I am a great fan of automatizing all possible tasks. 
         </p>

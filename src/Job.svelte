@@ -2,7 +2,7 @@
     import Section from './Section.svelte';
 </script>
 
-<Section title="Job" classes="p-3 md:p-2 lg:p-0 w-full md:w-4/5 lg:w-3/5 xl:w-2/4 transition-all duration-100">
+<Section title="Job" classes="p-3 md:p-2 lg:p-0 w-full md:w-4/5 lg:w-3/5 transition-all duration-100 max-w-screen-md">
     <div class="flex flex-row shadow rounded-md p-4 clipped-bg gap-4 items-stretch w-full">
         <img src="intpowers.png" alt="Interactive Powers logo" class="hidden sm:inline-block w-36 h-auto bg-white rounded-md shadow self-center"/>
         <div classe="self-stretch">
