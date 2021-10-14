@@ -2,9 +2,12 @@
     import { faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
     import Aptitudes from './Aptitudes.svelte';
+    import CookieConsentBanner from './CookieConsentBanner.svelte';
     import Job from './Job.svelte';
     import Section from './Section.svelte';
     import Socials from './Socials.svelte';
+
+    import { cookieConsent } from './cookie-store';
 
     const rrss = [
         {
@@ -63,7 +66,23 @@
         }
         return copy;
     }
+
+    $: showCookieConsentBanner = $cookieConsent === undefined;
 </script>
+
+<svelte:head>
+    {#if $cookieConsent}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F4YTG3EY7B"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-F4YTG3EY7B');
+    </script>
+    {/if}
+</svelte:head>
 
 <article class="font-sans text-gray-800 flex flex-col items-center gap-5">
     <h1 class="name text-4xl drop-shadow md:text-5xl font-bold text-center mt-16 mb-5 tracking-wider transition-all duration-100">Pablo Puga Peralta</h1>
@@ -79,6 +98,10 @@
     <Aptitudes keywords={shuffleArray(aptitudes)}/>
 
     <Socials {rrss}/>
+
+    {#if showCookieConsentBanner}
+    <CookieConsentBanner/>
+    {/if}
 </article>
 
 <style global lang="postcss">
