@@ -75,7 +75,7 @@
 </script>
 
 <svelte:head>
-    {#if $cookieConsent}
+    {#if $cookieConsent !== false}
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-F4YTG3EY7B"></script>
     <script>
