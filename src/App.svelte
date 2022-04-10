@@ -6,11 +6,22 @@
     import CookieConsentBanner from './CookieConsentBanner.svelte';
     import FaIcon from './FaIcon.svelte';
     import Job from './Job.svelte';
+    import ProjectList from './ProjectList.svelte';
     import Section from './Section.svelte';
     import Settings from './Settings.svelte';
     import Socials from './Socials.svelte';
 
     import { cookieConsent } from './cookie-store';
+
+    const projects = [
+        {
+            name: 'Knowledge',
+            logo: 'knowledge.png',
+            description: 'Collection of commands, programming pieces or general technical concepts.',
+            displayURL: 'knowledge.pablopugaperalta.com',
+            url: 'https://knowledge.pablopugaperalta.com'
+        },
+    ];
 
     const rrss = [
         {
@@ -103,6 +114,8 @@
             I am a Telecom Engineer specialized on modern communication technologies. I like to develop things in JavaScript, PHP, C and C++ and I am a great fan of automatizing all possible tasks. 
         </p>
     </Section>
+
+    <ProjectList projects={projects}/>
 
     <Job/>
 
