@@ -21,6 +21,13 @@
             displayURL: 'knowledge.pablopugaperalta.com',
             url: 'https://knowledge.pablopugaperalta.com'
         },
+        {
+            name: 'Pi Convergence',
+            logo: 'pi.png',
+            description: 'Showcase of different algorithms\' convergence',
+            displayURL: 'pablopugaperalta.com/pi',
+            url: 'https://pablopugaperalta.com/pi',
+        }
     ];
 
     const rrss = [
@@ -99,7 +106,7 @@
     {/if}
 </svelte:head>
 
-<article class="font-sans text-gray-800 flex flex-col items-center gap-5">
+<article class="font-sans text-gray-800 flex flex-col items-center gap-5 mb-20">
     {#if displaySettings}
         <Settings bind:displaySettings={displaySettings}/>
     {:else}
