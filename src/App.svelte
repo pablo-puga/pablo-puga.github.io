@@ -101,17 +101,23 @@
 </script>
 
 <svelte:head>
-    {#if $cookieConsent !== false}
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-F4YTG3EY7B"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied',
+        })
+        dataLayer.push({
+            'event': 'default_consent'
+        });
+        
         gtag('js', new Date());
 
         gtag('config', 'G-F4YTG3EY7B');
     </script>
-    {/if}
 </svelte:head>
 
 <article class="font-sans text-gray-800 flex flex-col items-center gap-5 mb-20">

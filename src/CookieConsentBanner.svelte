@@ -4,7 +4,7 @@
     import { cookieConsent } from './cookie-store';
 </script>
 
-<article out:fade="{{ duration: 250 }}" class="cookie-banner sm:max-w-sm">
+<article out:fade="{{ duration: 250 }}" class="consent sm:max-w-sm">
     <h3 class="mb-1 font-medium">Cookie Consent</h3>
     <p class="text-sm mb-2">I use cookies to measure the performance of the web through Google Analytics.</p>
     <div class="flex flex-row justify-end text-sm">
@@ -14,7 +14,7 @@
 </article>
 
 <style lang="postcss">
-    .cookie-banner {
+    .consent {
         @apply fixed bg-gray-800 text-gray-300 bottom-1 right-1 p-3 rounded-sm;
         width: calc(100% - 8px);
     }
