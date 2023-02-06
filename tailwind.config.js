@@ -1,8 +1,6 @@
 const config = {
     mode: 'jit',
-    purge: {
-        content: ['./src/**/*.{html,js,svelte,ts}', './public/index.html'],
-    },
+    content: ['./src/**/*.{html,js,svelte,ts}', './public/index.html'],
 
     prefix: '',
 
