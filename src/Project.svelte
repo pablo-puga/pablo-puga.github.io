@@ -7,7 +7,9 @@
 </script>
 
 <article class="flex flex-row flex-wrap items-center shadow rounded-md p-4 bg-white h-full">
-    <img src={logo} alt={`${name} logo`} class="hidden sm:inline-block sm:w-1/3 self-start"/>
+    <div class="hidden sm:inline-block sm:w-1/3 self-start p-3">
+        <img src={logo} alt={`${name} logo`} class="w-full h-auto"/>
+    </div>
     <section class="sm:w-2/3 p-2 self-start">
         <h1 class="text-lg md:text-2xl font-medium drop-shadow-sm whitespace-nowrap overflow-ellipsis overflow-hidden">{name}</h1>
         <p class="max-w-full text-sm">{description}</p>

@@ -16,14 +16,21 @@
     const projects = [
         {
             name: 'Knowledge',
-            logo: 'knowledge.png',
+            logo: 'project-pictures/knowledge.png',
             description: 'Collection of commands, programming pieces or general technical concepts.',
             displayURL: 'knowledge.pablopugaperalta.com',
             url: 'https://knowledge.pablopugaperalta.com'
         },
         {
+            name: 'Recetas',
+            logo: 'project-pictures/recetas.png',
+            description: 'Collection (In Spanish) of some of my most used food recipes.',
+            displayURL: 'recetas.pablopugaperalta.com',
+            url: 'https://recetas.pablopugaperalta.com'
+        },
+        {
             name: 'Pi Convergence',
-            logo: 'pi.png',
+            logo: 'project-pictures/pi.png',
             description: 'Showcase of different algorithms\' convergence',
             displayURL: 'pablopugaperalta.com/pi',
             url: 'https://pablopugaperalta.com/pi',

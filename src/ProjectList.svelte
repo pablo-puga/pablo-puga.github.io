@@ -6,7 +6,7 @@
 </script>
 
 <Section title="Projects" classes="p-3 md:p-2 lg:p-0 w-full md:w-4/5 lg:w-3/5 max-w-screen-md">
-    <ul class="flex flex-row flex-wrap gap-4 justify-between items-stretch">
+    <ul class="flex flex-row flex-wrap gap-4 items-stretch justify-center">
         {#each projects as project}
             <li class="project-wrapper"><Project {...project}/></li>
         {/each}
