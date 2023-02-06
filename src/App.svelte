@@ -64,6 +64,7 @@
     const aptitudes = [
         { text: 'PHP', weight: 1 },
         { text: 'JavaScript', weight: 1 },
+        { text: 'TypeScript', weight: 1 },
         { text: 'NodeJS', weight: 1 },
         { text: 'Linux', weight: 0.6 },
         { text: 'Bash', weight: 0.6 },
@@ -125,7 +126,7 @@
 
     <Section title="Who am I?" classes="text-center p-3 md:p-2 lg:p-0 md:w-3/4 max-w-screen-md">
         <p class="text-base md:text-xl">
-            I am a Telecom Engineer specialized on modern communication technologies. I like to develop things in JavaScript, PHP, C and C++ and I am a great fan of automatizing all possible tasks. 
+            I am a Telecom Engineer specialized on modern communication technologies. I like to develop things in TypeScript, PHP, C and C++ and I am a great fan of automatizing all possible tasks. 
         </p>
     </Section>
 
