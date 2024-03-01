@@ -25,8 +25,8 @@
             name: 'Recetas',
             logo: 'project-pictures/recetas.png',
             description: 'Collection (In Spanish) of some of my most used food recipes.',
-            displayURL: 'recetas.pablopugaperalta.com',
-            url: 'https://recetas.pablopugaperalta.com'
+            displayURL: 'lasrecetasdepablo.com',
+            url: 'https://lasrecetasdepablo.com'
         },
         {
             name: 'Pi Convergence',
